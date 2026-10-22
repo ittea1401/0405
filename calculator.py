@@ -32,10 +32,11 @@ class Form(QWidget):
 
         if text == "C":
             self.display.clear()
+
         elif text == "=":
             try:
                 result = eval(self.display.text())
-                self.display.setText(str(result)+'10')
+                self.display.setText(str(result))
             except:
                 self.display.setText("Error")
 
